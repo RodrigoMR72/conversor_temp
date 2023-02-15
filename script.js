@@ -1,10 +1,12 @@
-function converterToF() {
+var temperatura = document.getElementById('temperatura');
 
-    let temp = document.getElementById('temp').value;
+function converterToF(temperatura) {
+
+    //let temperatura = document.getElementById('temperatura').value;
 
     //let fahrenheit = Math.round(1.8*celsius + 32, -2) - forma de arredondar com duas casas decimais.
     
-    let fahrenheit = 1.8*temp + 32;
+    let fahrenheit = 1.8*temperatura.value + 32;
 
     //fahrenheit.toFixed(2);
 
@@ -13,7 +15,7 @@ function converterToF() {
     // console.log(celsius);
     // console.log(fahrenheit);
 
-    let textoResultado = 'A temperatura de ' + temp + '°C é ' + fahrenheit.toFixed(2).replace('.',',') + '°F.';
+    let textoResultado = 'A temperatura de ' + temperatura.value + '°C é ' + fahrenheit.toFixed(2).replace('.',',') + '°F.';
 
     // console.log('A temperatura de ' + celsius + '°C é ' + fahrenheit + '°F.');
 
@@ -28,13 +30,13 @@ function converterToF() {
 
 }
 
-function converterToC() {
+function converterToC(temperatura) {
 
-    let temp = document.getElementById('temp').value;
+    //let temperatura = document.getElementById('temperatura').value;
     
-    let celsius = (temp - 32)/1.8;
+    let celsius = (temperatura.value - 32)/1.8;
 
-    let textoResultado = 'A temperatura de ' + temp + '°F é ' + celsius.toFixed(2).replace('.',',') + '°C.';
+    let textoResultado = 'A temperatura de ' + temperatura.value + '°F é ' + celsius.toFixed(2).replace('.',',') + '°C.';
 
     console.log(textoResultado);
 

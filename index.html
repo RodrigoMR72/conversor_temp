@@ -12,27 +12,29 @@
     
     <div class="container">
 
-        <h2>Conversor de Temperaturas</h2>
+        <fieldset>
+            <legend>Conversor de Temperaturas</legend>
+            <form>
 
-       <form>
-
-        <label for="temp">Temperatura: </label>
-
-        <input type="number" name="temp" id="temp">
-
-        <div class="botoes">
-
-            <input type="button" value="°C -> °F" onclick="converterToF()">
-
-            <input type="button" value="°F -> °C" onclick="converterToC()">
-
-            <!-- No lugar do RESET, pode colocar RELOAD, mesmo que F5. -->
-
-            <button type="reset" onclick="limpar()">Limpar</button>
-
-        </div>
-
-       </form>
+                <label for="temperatura">Temperatura: </label>
+        
+                <input type="number" name="temperatura" id="temperatura">
+        
+                <div class="botoes">
+        
+                    <input type="button" value="°C -> °F" onclick="converterToF()">
+        
+                    <input type="button" value="°F -> °C" onclick="converterToC()">
+        
+                    <!-- No lugar do RESET, pode colocar RELOAD, mesmo que F5. -->
+        
+                    <button type="reset" onclick="limpar()">Limpar</button>
+        
+                </div>
+        
+               </form>
+        </fieldset>
+    
 
        <div class="resultado">
 
